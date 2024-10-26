@@ -17,6 +17,7 @@ One can also install SGLang through its official repo, but it may not support ou
 
 ## Finetune
 Our finetuning code for policy models and reward models is based on [gpt-accelera](https://github.com/Edward-Sun/gpt-accelera)
+You can check the code in the finetune directory, we also provide huggingface finetune code for policy model.
 You can find the models on huggingface: [Llemma-7b](https://huggingface.co/tkitsers/Llemma-metamath-7b), 
 [Llemma-34b](https://huggingface.co/tkitsers/Llemma-metamath-34b), [Llemma reward model](https://huggingface.co/tkitsers/Llemma-reward-model).
 
