@@ -2,7 +2,7 @@
 [**Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models**](https://arxiv.org/abs/2408.00724).
 
 ## Clone
-    git clone --recurse-submodules git@github.com:thu-wyz/rebase.git
+    git clone --recurse-submodules git@github.com:thu-wyz/inference_scaling.git
 This command will clone our repository with the [sglang](https://github.com/sgl-project/sglang) repository as a submodule. The sglang repository should be on the *reward-model* branch, which has been modified slightly by us to support our process reward model for efficient tree search.
 One can also use hf_score.py in the repo to score the steps of each solution.
 The benchmark datasets: [MATH](https://github.com/hendrycks/math), [GSM8K](https://github.com/openai/grade-school-math).
