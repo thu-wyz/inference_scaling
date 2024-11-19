@@ -1,7 +1,7 @@
 set -e 
 set -x
 
-export path=/usr1/data/yangzhew/project/rebase/exp_results
+export path="results path"
  
 
 python3 ./math_evaluate.py   --path $path/answers.json \

@@ -133,7 +133,7 @@ def majority_vote(path, weighted, weight_func, extract_function):
                 continue
             equiv_classes.append(answer)
             equiv_weights.append(weight)
-            if max_vote == 0:
+            if weight > max_vote:
                 max_vote = weight
                 max_rep = answer
         if grade_answer(str(max_rep), qapair["ground_truth_answer"]):

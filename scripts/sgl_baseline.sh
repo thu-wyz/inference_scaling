@@ -1,7 +1,7 @@
 set -e
 set -x
 
-export DATA_DIR=/usr1/data/yangzhew/dataset/prm800k/prm800k/math_splits/test.jsonl
+export DATA_DIR="problem-path"
 export OUT_DIR=./exp_results/sgl_baseline
 
 MAX_TOKENS=1024

@@ -10,8 +10,9 @@ The benchmark datasets: [MATH](https://github.com/hendrycks/math), [GSM8K](https
 ## Install
 In order to install SGLang and other dependencies:
 
-    cd sglang
-    pip install -e "python[all]"
+    cd sglang/python
+    pip install .
+    pip install outlines==0.0.44
 
 One can also install SGLang through its official repo, but it may not support our process reward model, hence could only be used for sampling.
 
@@ -39,7 +40,10 @@ Before starting the REBASE, set the hyperparameters in the YAML file. Then run:
     bash ./scripts/rebase.sh
 
 ## Evaluate
-ou can select various aggregation functions for the scores at each step, such as last, mean, prod, or min. Additionally, you can modify the script to select answer based on best-of-n or weighted majority voting.
+GSM8K https://huggingface.co/datasets/openai/gsm8k
+MATH500 https://github.com/openai/prm800k/tree/main/prm800k/math_splits/test.jsonl
+
+You can select various aggregation functions for the scores at each step, such as last, mean, prod, or min. Additionally, you can modify the script to select answer based on best-of-n or weighted majority voting.
 
     bash ./scripts/evaluate.sh
 
